@@ -144,6 +144,12 @@ define Package/openvswitch-common/postinst
 [ -n "$${IPKG_INSTROOT}" ] || /etc/init.d/openvswitch enable || true
 endef
 
+define Package/openvswitch-controller
+  $(call Package/openvswitch/Default)
+  TITLE:=Open Flow Switch Userspace Package
+  DEPENDS:=+openvswitch-common
+endef
+
 define Package/openvswitch-controller/install
 	$(INSTALL_DIR) $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-controller $(1)/usr/bin/
