@@ -33,3 +33,6 @@ Edit /package/libs/toolchain/Makefile
 (http://patchwork.openwrt.org/patch/5019/)
 
 $ Make V=s
+
+### Binaries
+install binaries are located in binaries directory
