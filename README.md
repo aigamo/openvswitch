@@ -35,4 +35,4 @@ Edit /package/libs/toolchain/Makefile
 $ Make V=s
 
 ### Binaries
-install binaries are located in binaries directory
+Install binaries are located in packages directory
